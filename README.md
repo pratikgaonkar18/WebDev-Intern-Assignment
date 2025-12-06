@@ -9,7 +9,7 @@ Designed as a real-world internship project demonstrating full-stack skills.
 ##  Live Demo Links
 
 🔹 **Frontend (Vercel)** → https://web-dev-intern-assignment.vercel.app/  
-🔹 **Backend API (Render)** → https://webdev-intern-assignment-p1l1.onrender.com/api  
+🔹 **Backend API (Render)** → https://webdev-intern-assignment-p1l1.onrender.com/
 
 ---
 
@@ -106,9 +106,9 @@ WebDev-Intern-Assignment/
 
 ### 🔸 Backend (.env)
  
- MONGO_URI=your_mongo_connection_string
-JWT_SECRET=your_secret_key
-CLIENT_URL=https://web-dev-intern-assignment.vercel.app
+-> MONGO_URI=your_mongo_connection_string
+->JWT_SECRET=your_secret_key
+->CLIENT_URL=https://web-dev-intern-assignment.vercel.app
 
 
 ### 🔸 Frontend  
@@ -132,8 +132,6 @@ Handled via `api.js` config.
 - Dashboard UI
 - Browser network tab → token response
 - MongoDB user data
-
-(Add images if submitting anywhere)
 
 ---
 
