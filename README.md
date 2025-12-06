@@ -5,6 +5,10 @@ A production-ready authentication system built using **React, Node.js, Express, 
 Designed as a real-world internship project demonstrating full-stack skills.
 
 ---
+Demo Login Credentials
+Email: testdemo@gmail.com
+Password: testdemo123@
+
 
 ##  Live Demo Links
 
