@@ -8,27 +8,27 @@ dotenv.config();
 
 const app = express();
 
-// --------- CORS (CLEAN VERSION) ----------
+// ------------ CORS (simple & safe) ------------
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
-    credentials: true,
+    origin: true,          // reflect the request origin
+    credentials: true,     // allow cookies/auth headers if needed
   })
 );
-// DO NOT add any manual res.header('Access-Control-Allow-Origin', ...) anywhere
+// IMPORTANT: Do NOT set any other Access-Control-* headers manually anywhere.
 
-// --------- MIDDLEWARE ----------
+// ------------ MIDDLEWARE ------------
 app.use(express.json());
 
-// --------- HEALTH CHECK ----------
+// ------------ HEALTH CHECK ------------
 app.get("/", (req, res) => {
   res.send("Auth API is running");
 });
 
-// --------- ROUTES ----------
+// ------------ ROUTES ------------
 app.use("/api/auth", authRoutes);
 
-// --------- DB + SERVER START ----------
+// ------------ DB + SERVER START ------------
 const PORT = process.env.PORT || 5000;
 
 mongoose
